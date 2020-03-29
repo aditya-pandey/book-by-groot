@@ -18,6 +18,7 @@
     transition-property: opacity;
     transition-delay: 0.5s;
     transition-duration: 2s;
+    overflow: hidden;
 }
 .preload > h2{
     font-family: "Rochester", cursive;
@@ -396,7 +397,7 @@ li.menu-item{
   position: absolute;
   width:100%;
   min-height:100vh;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: stretch;
   text-align: center;
@@ -415,7 +416,7 @@ li.menu-item{
   border-top: 3px soild black;
   /* background: rgb(198, 209, 198); */
   text-align: center;
-  display:flex;
+  display:none;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -443,7 +444,7 @@ li.menu-item{
   background: black;
   min-height:10vh;
   top: 310vh;
-  display: flex;
+  display: none;
   justify-content: space-evenly;
   align-items: center;
   color: white;

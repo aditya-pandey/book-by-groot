@@ -4,6 +4,9 @@ setTimeout(()=>{
     var loading = document.querySelector(".preload h3");
     var preloadLogo = document.querySelector(".preload img");
     var preloadBook = document.querySelector(".preload-book");
+    var poemIntro = document.querySelector(".poem-intro");
+    var about = document.querySelector("#about");
+    var contact = document.querySelector("#contact");
     // name.style.transform = "translateY(-500px)";
     // preloadBook.style.transform = "translateY(500px)";
     name.style.opacity= "0";
@@ -11,6 +14,9 @@ setTimeout(()=>{
     preloadBook.style.opacity= "0";
     preload.style.opacity = "0";
     preloadLogo.style.opacity = "0";
+    poemIntro.style.display = "flex";
+    about.style.display = "flex";
+    contact.style.display = "flex";
     setTimeout(function(){
         preload.style.display = "none";
     },
