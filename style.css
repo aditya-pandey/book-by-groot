@@ -367,12 +367,11 @@ li.menu-item{
   text-decoration:none;
   color:black;  
 }
-.frame h3 a:hover{
+.frame h3:hover a{
     color:rgb(211,207,207);
 }
 .frame h3:hover{
   background:rgba(15, 15, 15, 0.7);
-  color:rgb(211, 207, 207);
 }
 .book {
   position: relative;
