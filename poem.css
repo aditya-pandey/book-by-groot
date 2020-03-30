@@ -18,11 +18,13 @@
 .poem p,.poem h2{
     font-family: 'Aladin', cursive;
     margin-top: 20px;
+    font-size:1.2em;
 }
 .poem{
     padding: 30px;
-    width: 80%;
+    width: 92%;
     padding: 50px;
+    border-radius: 20px;
 }
 .poem1{
     min-height:80vh;
@@ -39,5 +41,8 @@
 @media screen and (min-width:820px){
     .poem p,.poem h2{
         font-size:1.5em;
+    }
+    .poem{
+        width: 65%;
     }
 }
