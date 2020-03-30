@@ -20,6 +20,9 @@
     margin-top: 20px;
     font-size:1.2em;
 }
+.poem h2{
+    text-decoration: underline;
+}
 .poem{
     padding: 30px;
     width: 92%;
