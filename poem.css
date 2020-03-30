@@ -22,6 +22,7 @@
 }
 .poem h2{
     text-decoration: underline;
+    font-size:1.6em;
 }
 .poem{
     padding: 30px;
