@@ -363,6 +363,9 @@ li.menu-item{
   font-size:0.95rem;
   padding:4px;
 }
+.frame a{
+  text-decoration: none;
+}
 .frame h3:hover{
   background:rgba(15, 15, 15, 0.7);
   color:rgb(211, 207, 207);
@@ -376,7 +379,8 @@ li.menu-item{
   border-radius: 2px 4px 4px 2px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2), -1px 4px 4px 0 rgba(0, 0, 0, 0.3);
   background: #1e1e1e;
-  background: linear-gradient(45deg, #1e1e1e 0%, #4f4f4f 100%);
+  background: url("/book-cover.jpg") no-repeat center center/cover;
+  /* background: linear-gradient(45deg, #1e1e1e 0%, #4f4f4f 100%); */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1e1e', endColorstr='#4f4f4f',GradientType=1 );
 }
 .book:before {
