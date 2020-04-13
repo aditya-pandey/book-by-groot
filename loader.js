@@ -21,7 +21,7 @@ setTimeout(()=>{
         preload.style.display = "none";
     },
     2000)
-},5000)
+},5000);
 
 (function(){
     var burger = document.querySelector('.burger-container'),
