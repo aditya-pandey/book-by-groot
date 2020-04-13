@@ -7,26 +7,26 @@ html, body {
     color:#000;
     margin: 0;
     padding: 0;
-    background: rgb(112, 130, 211);
+    background: rgb(96, 153, 179);
   }
   .navbar{
     position: fixed;
     width: 60px;
-    background: rgba(0,0,0,0.9);
     height: 100vh;
-    color: rgba(175, 175, 175, 0.7);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     font-size: 2em;
+    -webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 2px 10px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.5);
     overflow: hidden;
     z-index: 99;
-    transition: all 0.5s;
+    transition: all 0.4s;
     left: 0px;
-  }
-  .navbar:hover{
-    left:0px;
+    background: #21242e;
+    color:#ffffff99;
   }
   .navbar a{
     color:rgba(175, 175, 175, 0.7);
@@ -48,7 +48,7 @@ html, body {
   .navbar div div:hover a{
     color: rgb(255, 255, 255);
   }
-  .index{
+  .index, .font-prop,.theme{
     position: fixed;
     background: #36383d;
     flex-direction: column;
@@ -56,12 +56,42 @@ html, body {
     -moz-box-shadow: 0 4px 32px 0 rgba(0,0,0,0.5);
     box-shadow: 0 4px 32px 0 rgba(0,0,0,0.5);
     border-radius: 5px;
-    z-index: 100;
     color: rgba(255,255,255,0.9);
     padding: 15px 0px;
     left:61px;
-    display:none;
+    display: none;
+    z-index: 100;
   }
+  .font-prop{
+    z-index: 100;
+    height: 50px;
+    padding: 15px 20px;
+    font-weight: bold;
+    top:60px;
+    line-height: 3;
+  }
+  .theme{
+    top: 140px;
+    padding: 15px 20px;
+  }
+.theme button{
+  width: 100px;
+  margin: 5px;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.theme button:hover{
+  opacity: 1;
+}
+  .font-prop select {
+    width: 150px;
+    height: 36px;
+    padding: 6px;
+    border-radius: 5px;
+}
     .index h3{
       padding: 0px 15px;
     }
@@ -182,19 +212,35 @@ html, body {
 .cover, .name, .contents{
   justify-content: space-evenly;
 }
-
-
+.chap-nav{
+  position: absolute;
+  bottom: -1px;
+  left: 44%;
+  font-size: 2em;
+  z-index: 98;
+}
+.chap-nav a{
+  color: black;
+}
+.book-container{
+  margin-bottom: 50px;
+}
 @media screen and (min-width:768px){
   .paper{
     width: 320px;
     height: 70vh;
   }
   .swiper-slide{
-    font-size: 19px;
+    font-size: 18px;
   }
   .swiper-pagination{
     left:40%;
     margin-top: 15px;
+  }
+  .chap-nav{
+    left: 47%;
+    bottom: -12px;
+    font-size: 2.3em;
   }
 }
 @media screen and (max-width:375px){
@@ -213,7 +259,7 @@ html, body {
 }
 @media screen and (max-width:768px){
   .paper{
-    width:270px;
+    width:245px;
   }
   .swiper-slide{
     font-size:15px;
@@ -240,5 +286,13 @@ html, body {
     bottom:52px;
     display: none;
   }
-
+  .font-prop{
+    left: 50px;
+    top: calc(100vh - 131px);
+    display: none;
+  }
+  .theme{
+    left: 160px;
+    top: calc(100vh - 201px);
+  }
 }
