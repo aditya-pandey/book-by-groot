@@ -212,19 +212,6 @@ html, body {
 .cover, .name, .contents{
   justify-content: space-evenly;
 }
-.chap-nav{
-  position: absolute;
-  bottom: -1px;
-  left: 44%;
-  font-size: 2em;
-  z-index: 98;
-}
-.chap-nav a{
-  color: black;
-}
-.book-container{
-  margin-bottom: 50px;
-}
 @media screen and (min-width:768px){
   .paper{
     width: 320px;
@@ -237,11 +224,6 @@ html, body {
     left:40%;
     margin-top: 15px;
   }
-  .chap-nav{
-    left: 47%;
-    bottom: -12px;
-    font-size: 2.3em;
-  }
 }
 @media screen and (max-width:375px){
   .paper{
@@ -249,7 +231,7 @@ html, body {
     height :60vh;
   }
   .swiper-slide{
-    font-size:13px;
+    font-size:14px;
   }
 }
 @media screen and (max-width:425px){
@@ -260,9 +242,11 @@ html, body {
 @media screen and (max-width:768px){
   .paper{
     width:245px;
+    height: 50vh;
   }
   .swiper-slide{
     font-size:15px;
+    margin-top:0px;
   }
 }
 @media screen and (max-width:550px){
