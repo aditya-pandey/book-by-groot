@@ -329,7 +329,6 @@ li.menu-item{
   font-family: 'Lato', Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-   background-attachment: fixed;
 }
 .frame h1,.poem-intro h1, #about h1{
   font-family:"Mukta", sans-serif;

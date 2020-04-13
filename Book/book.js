@@ -9,6 +9,7 @@ var cover = document.querySelector(".cover");
 
 var font = document.querySelector("#fonts");
 var paper = document.querySelectorAll(".paper");
+var paperP = document.querySelectorAll(".paper p");
 
 var icons = [indexI,fontI,themeI];
 var features = [index,fontProp,theme];
@@ -39,7 +40,7 @@ themechanger.forEach(el => {
 })
 
 font.addEventListener("change",() => {
-    paper.forEach(el => {
+    paperP.forEach(el => {
         el.style.fontFamily = `${font.value}`;
     });
 })

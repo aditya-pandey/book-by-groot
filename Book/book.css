@@ -67,11 +67,12 @@ html, body {
     padding: 15px 20px;
     font-weight: bold;
     top:60px;
-    line-height: 3;
+    z-index: 101;
   }
   .theme{
     top: 140px;
     padding: 15px 20px;
+    z-index: 102;
   }
 .theme button{
   width: 100px;
