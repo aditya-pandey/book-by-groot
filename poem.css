@@ -28,20 +28,25 @@
     padding: 30px;
     width: 92%;
     padding: 50px;
-    border-radius: 20px;
+    border-radius: 30px;
 }
-.poem1{
+.poem1, .poem3, .poem6{
     min-height:80vh;
-    background: url("/poemsimg3.png") no-repeat center  center/cover;
+    padding: 200px 0;
+    background: url("/images/poemsimg3.png") no-repeat center  center/cover;
 }
-.poem2{
+.poem2,.poem4{
     min-height:80vh;
     margin-top:50px;
     padding-top: 50px;
     margin-bottom: 50px;
-    background: url("/poemsimg2.png") no-repeat center center/cover;
+    background: url("/images/poemsimg2.png") no-repeat center center/cover;
 }
-
+.poem5{
+    background: url("/images/poemsimg4.jpg") no-repeat center center/cover;
+    padding: 100px 0;
+    color: #0c0c0e;
+}
 @media screen and (min-width:820px){
     .poem p,.poem h2{
         font-size:1.5em;

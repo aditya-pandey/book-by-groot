@@ -3,18 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IIM_Groot</title>
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-96x96.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-128x128.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-144x144.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-384x384.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-512x512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+    <meta name="theme-color" content="#db4938" />
+    <title>IIM_GROOT</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Rochester&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="/favicon.png">
 </head>
 <body>
     <div class="preload">
         <h2>i am groot</h2>
-        <img src="/preload-logo.png" alt="" width="100" height="100">
+        <img src="/images/preload-logo.png" alt="" width="100" height="100">
         <h3>Loading . . .</h3>
         <div class="preload-book">
             <div class="book__page"></div>
@@ -34,53 +47,88 @@
             <ul class="menu">
                 <li class="menu-item"><a href="/Book/chp1.html">Book</a></li>
                 <li class="menu-item"><a href="/poems.html">Poems</a></li>
-                <li class="menu-item"><a href="#about">About</a></li>
-                <li class="menu-item"><a href="#contact">Contact</a></li>
+                <li class="menu-item" id="about-link"><a href="#about">About</a></li>
+                <li class="menu-item" id="contact-link"><a href="#contact">Contact</a></li>
             </ul>
+            <div class="install"><a href="#"><i class="fas fa-download"></i></a></div>
         </div>
     </nav>
-    <div class="container">
-            <div class="frame">
-                <h1>Groot's Book</h1>
 
-                <div class="book">
-                </div>
-                <p>Vidit had a dream once, something he had left behind a long time ago,what he did now know was that some dreams can be erased from your memory but not from your heart and sometimes it's good to chase your dreams. After all, it's the dreams we have that keep us alive and running. </p>
-                <a href="/Book/chp1.html"><h3>Read the Book</h3></a>
-              </div>
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section-title section-title-intro">
+            Hi, I am <strong>Groot ! !</strong>
+        </h1>
+        <p class="section-subtitle section-subtitle-intro">A Writer for Fun</p>
+        <img  class="intro-img" src="/images/groot-intro.jpg" alt="picture of groot waving">
+    </section>
 
-    </div>
-    <div class="poem-intro">
-        <div class="heading">
-            <h1>Groot's Poetries</h1>
-            <p>It is a test [that] genuine poetry can communicate before it is understood.” — T. S. Eliot, from the essay "Dante."</p>
-        <h2><a href="/poems.html">Read Poems</a></h2>
-        </div>
-    </div>
-    <div id="about">
-        <h1>About Groot</h1>
-        <div class="desc">
-            <img src="/profile.png" alt="GROOT" width="250" height="200">
-            <p class="tmay">
-                I have a lot to tell
-But sorry, it's personal
-So here it is:<br>
-To keep you content with<br>
-A writer for fun,<br>
-An otaku by choice<br>
-Yet a normal guy<br>
-That's all,uhmm...bye bye 	.
+    <!-- Book -->
+    <section class="my-book" id="book">
+        <h2 class="section-title section-title-book">My Book</h2>
+        <div class="book-container">
+            <div class="books">
+                <div class="book"></div>
+                <p>
+                    Vidit was living a perfect life, he was at the place he wanted to be until someone made him remember what he was missing in his life and made him reflect on his past.
+                    In this story of going back to what he had forgotten a long time back, what would he sacrifice,
+                    and will he be able to realize his dream, concurrently fighting his inner demons and racing through politics, mafia, and betrayals altogether?
+                </p>
+            </div>
+        </div> <!--book-->
+        <a href="/Book/chp1.html" class="btn">Read the Book</a>
+    </section>
+
+    <!-- Poems -->
+    <section class="my-poems" id="work">
+        <h2 class="section-title ">My Poems</h2>
+        <div class="poems">
+            <p>
+                "It is a test [that] genuine poetry can communicate before it is understood.”
+                 — T. S. Eliot, from the essay "Dante."
             </p>
         </div>
-    </div>
-    <div id="contact">
-        <div class="pg">
-            <a href="https://www.pagalguy.com/@IIM_Groot" target="_blank"><img src="/pg_logo.png" alt="Pagalguy"></a>
+        <a href="/poems.html" class="btn">Read the Poems</a>
+    </section>
+
+    <!-- About Groot -->
+    <div class="about-container">
+    <section class="about-groot" id="about">
+        <h2 class="section-title section-title-about">Who I am</h2>
+        <p class="section-subtitle section-subtitle-about">Poet, Writer and Anime Lover 😍</p>
+
+        <div class="about-me-body">
+            <p>
+                I have a lot to tell, <br>
+                But sorry, it's personal. <br>
+                So here it is: <br>
+                To keep you content with,<br>
+                A writer for fun, <br>
+                An otaku by choice, <br>
+                Yet a normal guy, <br>
+                That's all, uhmm...bye bye 	.
+            </p>
         </div>
-        <div class="email">
-            Email: <a href="mailto:grootiim@gmail.com" target="_blank">grootiim@gmail.com</a>
-        </div>
+        <img class="about-groot-img" src="/images/groot-img-02.jpg" alt="groot walking">
+     </section>
     </div>
+     <footer class="footer" id="contact">
+        <!-- replace with your own email address -->
+        <a href="mailto:grootiim@gmail.com" class="footer-link">grootiim@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list-item"><a class="social-list-link" href="https://www.pagalguy.com/@IIM_Groot"><img src="/images/pg_logo.png" alt="Pagalguy"></a></li>
+        </ul>
+    </footer>
+    <script>
+        if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function() {
+            navigator.serviceWorker
+            .register("/serviceWorker.js")
+            .then(res => console.log("service worker registered"))
+            .catch(err => console.log("service worker not registered", err))
+        })
+    }
+    </script>
     <script src="/loader.js"></script>
 </body>
 </html>

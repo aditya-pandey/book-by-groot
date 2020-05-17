@@ -30,17 +30,29 @@ for(let i=0;i<icons.length;i++){
         ;
     })
 }
+var chplinks = document.querySelectorAll(".contents a");
 themechanger.forEach(el => {
     el.addEventListener("click",() => {
         for (let i = 1; i < paper.length; i++) {
             paper[i].style.background = `${el.style.background}`;
             paper[i].style.color = `${el.style.color}`;
+            if(paper[i].style.background == "black"){
+                chplinks.forEach(k => {
+                    k.style.color = "gray";
+                }
+
+                )
+            }
         }
+
     })
 })
 
 font.addEventListener("change",() => {
     paperP.forEach(el => {
         el.style.fontFamily = `${font.value}`;
+        if(el.style.fontFamily == "'Roboto Mono', monospace"){
+            el.style.fontSize = "0.8em";
+        }
     });
 })
